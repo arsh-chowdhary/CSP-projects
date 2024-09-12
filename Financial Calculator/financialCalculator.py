@@ -1,11 +1,27 @@
 print("This is going to calculate your budget for the month")
 
-income = input("How much do you make a month?")
-rent = input("How much is your rent?")
-utilities = input("How much are your utilities?")
-groceries = input("How much are your groceries?")
-transportation = input("How much do you spend on transportation?")
+income = float(input("How much do you make a month?"))
+rent = float(input("How much is your rent?"))
+utilities = float(input("How much are your utilities?"))
+groceries = float(input("How much are your groceries?"))
+transportation = float(input("How much do you spend on transportation?"))
 
-expenses = 
-savings = input()
-total = input()
+expenses = rent + utilities + groceries + transportation
+savings = income * 0.2
+total = income - expenses - savings
+
+prent = rent / income
+putilities = utilities / income
+pgroceries = groceries / income
+ptransportation = transportation / income
+pexpenses = expenses / transportation
+
+print("Your income is", income)
+print("Your expenses are", expenses)
+print("Your savings are", savings)
+print("Your total left to spend is", total)
+
+print("Your rent is", prent, "of your income")
+print("Your utilities are", putilities, "of your income")
+print("Your groceries are", pgroceries, "of your income")
+print("Your transportation is", ptransportation, "of your income")
