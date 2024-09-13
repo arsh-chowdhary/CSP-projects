@@ -10,18 +10,18 @@ expenses = rent + utilities + groceries + transportation
 savings = income * 0.2
 total = income - expenses - savings
 
-prent = rent / income
-putilities = utilities / income
-pgroceries = groceries / income
-ptransportation = transportation / income
-pexpenses = expenses / transportation
+prent = rent / income *100 
+putilities = utilities / income *100
+pgroceries = groceries / income *100
+ptransportation = transportation / income *100
+pexpenses = expenses / transportation *100
 
 print("Your income is", income)
 print("Your expenses are", expenses)
 print("Your savings are", savings)
 print("Your total left to spend is", total)
 
-print("Your rent is", prent, "of your income")
-print("Your utilities are", putilities, "of your income")
-print("Your groceries are", pgroceries, "of your income")
-print("Your transportation is", ptransportation, "of your income")
+print("Your rent is %", prent, "of your income")
+print("Your utilities are %", putilities, "of your income")
+print("Your groceries are %", pgroceries, "of your income")
+print("Your transportation is %", ptransportation, "of your income")

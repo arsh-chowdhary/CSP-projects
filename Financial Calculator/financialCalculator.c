@@ -26,22 +26,22 @@ int main(void){
     savings = income * .2;
     total = income - expenses - savings;
 
-    prent = rent / income;
-    putilities = utilities / income;
-    pgroceries = groceries / income;
-    ptransportation = transportation / income;
-    pexpenses = expenses / transportation;
+    prent = rent / income *100;
+    putilities = utilities / income *100;
+    pgroceries = groceries / income *100;
+    ptransportation = transportation / income *100;
+    pexpenses = expenses / transportation *100;
 
 
-    printf("Your income is: $%.2f/n", income); //f is float .2 is how many decimal points
-    printf("Your expenses are: $%.2f/n", expenses);
-    printf("Your savings are: $%.2f/n", savings);
-    printf("Your total left to spend is $%.2f/n", total);
+    printf("Your income is: $%.2f\n", income); //f is float .2 is how many decimal points
+    printf("Your expenses are: $%.2f\n", expenses);
+    printf("Your savings are: $%.2f\n", savings);
+    printf("Your total left to spend is $%.2f\n", total);
 
-    printf("Your rent is %.2f", prent, "of your income/n");
-    printf("Your utilities are %.2f", putilities, "of your income/n");
-    printf("Your groceries are %.2f", pgroceries, "of your income/n");
-    printf("Your transportation is %.2f", ptransportation, "of your income/n");
+    printf("Your rent is %.2f%%", prent, "of your income/n");
+    printf("Your utilities are %.2f%%", putilities, "of your income/n");
+    printf("Your groceries are %.2f%%", pgroceries, "of your income/n");
+    printf("Your transportation is %.2f%%", ptransportation, "of your income/n");
     
 
     return 0;
