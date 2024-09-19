@@ -4,12 +4,15 @@
 int main(void){
 
     char name[20];
-    char decorationFirst[4] = "<<< ";
-    char decorationSecond[4] = " >>>";
+    char decorationFirst[20] = "<<< ";
+    char decorationSecond[20] = " >>>";
+
     printf("What is your name? \n");
     scanf("%s", name);
-    strcat(decorationFirst + name + decorationSecond);
-    printf("%s\n", name);
+
+    strcat(decorationFirst, name);
+    strcat(decorationFirst, decorationSecond);
+    printf("%s\n", decorationFirst);
 
     return 0;
     
