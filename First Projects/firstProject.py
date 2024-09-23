@@ -1,2 +1,4 @@
-name = input("Enter your name")
-print("Hello, nice to meet you,", name)
+def hello_name(hello, name):
+    return(s"Hello,", name)
+
+hello_name()
