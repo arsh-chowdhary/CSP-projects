@@ -2,6 +2,10 @@ def user_input(type, var):
     var = input("How much is your ", type, ": ")
     return(var)
 
+def percent(type, amount):
+    per = amount / income *100
+    print()
+
 print("This is going to calculate your budget for the month")
 
 income = float(input("How much do you make a month?"))
