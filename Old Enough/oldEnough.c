@@ -4,6 +4,7 @@
 int age = 19;
 
 int main(void){
+    
     if (age >= 18){
         printf("You are old enough to vote!");
     }else if (age >= 16){
