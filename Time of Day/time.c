@@ -1,21 +1,26 @@
 #include <stdio.h>
+#include <time.h>
 
-int grade;
+int hour;
 
 int main(){
-    printf("What is your grade percent?: \n");
-    scanf("%d", &grade);
-    if (grade >= 90){
-        printf("You have an A!\n");
-    }else if (grade >= 80){
-        printf("You have an B!\n");
-    }else if (grade >= 70){
-        printf("You have an C.\n");
-    }else if (grade >= 60){
-        printf("You have an D.\n");
+    time_t now;
+    struct tm*now_tm;
+
+    now = time(NULL);
+    now_tm = localtime(&now);
+    hour = now_tm->tm_hour;
+    printf("%d\n", hour);
+
+    if (hour <= 12){
+        printf("Good Morning!\n");
+    }else if (hour <= 18){
+        printf("Good Afternoon!\n");
+    }else if (hour <= 20){
+        printf("Good Evening!\n");
     }else{
-        printf("You have an F\n");
+        printf("Good Night!\n");
     }
-    return 0;
-    
+
+    return 0;    
 }
