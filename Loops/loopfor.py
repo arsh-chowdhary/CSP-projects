@@ -2,11 +2,8 @@ import random
 
 siblings = ["Alex", "Katie", "Andrew", "Vienna", "Tia", "Treyson", "Xavier", "Jake"]
 
-for index, sib in enumerate(siblings):
-    num = 0
-    num += 1                            #listing names
+for index, sib in enumerate(siblings):                          #listing names
     print(f"{index+1}. {sib}")
-
 
 
 for x in range(10, 20, 2): #starting number, stop number, counting by
